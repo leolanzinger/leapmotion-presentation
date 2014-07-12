@@ -1,0 +1,7 @@
+{
+  "name": "prototyping-and-evaluation-of-the-leap-motion-as-a-musical-controller",
+  "version": "0.0.0",
+  "dependencies": {
+    "reveal.js": "~2.6.1"
+  }
+}

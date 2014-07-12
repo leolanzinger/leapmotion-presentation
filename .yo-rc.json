@@ -1,0 +1,10 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Prototyping and evaluation of the Leap Motion as a musical controller",
+    "packageVersion": "0.0.0",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "leolanzinger",
+    "githubRepository": "leapmotion-presentation"
+  }
+}
