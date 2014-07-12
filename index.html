@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Prototyping and evaluation of the Leap Motion as a musical controller</title>
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
+    
+        <link rel="stylesheet" href="css/theme/serif.css" id="theme">
+
+        <!-- custom thesis css -->
+        <link rel="stylesheet" href="css/thesis.css">
+    
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css" id="highlight-theme">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+          if( window.location.search.match( /print-pdf/gi ) ) {
+            var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'bower_components/reveal.js/css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <figure class="logo-unitn">
+            <img src="img/logo_unitn_it.jpg" />
+        </figure>
+
+        <div class="reveal">
+
+            <div class="slides">
+
+                
+                    
+                        
+    <section data-html="slides/title.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/controller-musicali.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/leap-motion.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/live-demo.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/task-musicali-proposti.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/sviluppo-dei-prototipi.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/prototype-1.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/prototype-2.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/test-quantitativo.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/risultati-test-quantitativo.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/test-qualitativo.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/risultati-test-qualitativo.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/valutazione-quantitativa.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/valutazione-qualitativa.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/sviluppi-futuri.html"></section>
+
+
+                    
+                    
+                
+            </div>
+
+        </div>
+
+        <script src="js/jquery.js"></script>
+
+        <!-- Leap Motion live demo -->
+        <script src = "js/leap.js" ></script>
+        <script src = "leapjs/lib/three.min.js"                                  ></script>
+        <script src = "leapjs/lib/stats.min.js"                                  ></script>
+        <script src = "leapjs/lib/ConnectedHand.js"                              ></script>
+
+        <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+        <script src="bower_components/reveal.js/js/reveal.min.js"></script>
+        <script>
+            // Configure Reveal
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                width: 1260,
+                height: 800,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    // { src: 'bower_components/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    //{ src: 'bower_components/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+
+                    { src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } }
+                ]
+            });
+        </script>
+
+        <script>
+
+          // Global Variables for THREE.JS
+          var container , camera, scene, renderer , stats;
+
+          // Global variable for leap
+          var frame, controller;
+
+          // Setting up how big we want the scene to be
+          var sceneSize = 100;
+
+          var leftHand , rightHand;
+
+
+          // Get everything set up
+          init();
+
+          // Start the frames rolling
+          animate();
+
+
+          function init(){
+
+            controller = new Leap.Controller();
+
+            scene = new THREE.Scene();
+            
+            camera = new THREE.PerspectiveCamera( 
+              50 ,
+              window.innerWidth / window.innerHeight,
+              sceneSize / 100 ,
+              sceneSize * 4
+            );
+
+            // placing our camera position so it can see everything
+            camera.position.z = sceneSize;
+
+            // Getting the container in the right location
+            // container = document.createElement( 'div' );
+
+            container = $("#leap-demo");
+
+            // container.style.width      = '100%';
+            // container.style.height     = '100%';
+            // container.style.position   = 'absolute';
+            // container.style.top        = '0px';
+            // container.style.left       = '0px';
+            // container.style.background = '#000';
+
+            // document.body.appendChild( container );
+
+
+            // Getting the stats in the right position
+            // stats = new Stats();
+
+            // stats.domElement.style.position  = 'absolute';
+            // stats.domElement.style.bottom    = '0px';
+            // stats.domElement.style.right     = '0px';
+            // stats.domElement.style.zIndex    = '999';
+
+            // document.body.appendChild( stats.domElement );
+
+
+            // Setting up our Renderer
+            renderer = new THREE.WebGLRenderer();
+
+            renderer.setSize( window.innerWidth, window.innerHeight );
+            $('#leap-demo').append(renderer.domElement);
+
+
+            // Making sure our renderer is always the right size
+            window.addEventListener( 'resize', onWindowResize , false );
+
+            
+           
+            leftHand = new ConnectedHand( controller );
+            leftHand.addToScene( scene );
+
+            rightHand = new ConnectedHand( controller );
+            rightHand.addToScene( scene );
+            
+
+            var geo = new THREE.CubeGeometry( 1 , 1 , 1 );
+            var mat = new THREE.MeshBasicMaterial({color:0x402222, transparent:true,opacity:.5 });
+            var jointMesh = new THREE.Mesh( geo , mat );
+
+            var connectionMesh = new THREE.Mesh( geo , mat );
+            
+            var centerMesh = new THREE.Mesh( geo , mat );
+            centerMesh.scale.x = 10;
+            centerMesh.scale.z = 10;
+
+            // leftHand.createFingers( jointMesh , connectionMesh );
+            // leftHand.createPalm( jointMesh , connectionMesh , centerMesh );
+
+
+            controller.connect();
+
+
+          }
+
+
+          function animate(){
+
+            // Tells us which hand to update with
+            leftHand.update( 'left' );
+            rightHand.update( 'right' );
+
+
+            renderer.render( scene , camera );
+
+            requestAnimationFrame( animate );
+
+          }
+
+          // Resets the renderer to be the proper size
+          function onWindowResize(){
+
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+
+            renderer.setSize( window.innerWidth, window.innerHeight );
+
+          }
+
+
+        </script>
+
+    </body>
+
+</html>

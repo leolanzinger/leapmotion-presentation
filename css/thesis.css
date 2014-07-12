@@ -1,0 +1,144 @@
+body {
+	background-color: #fff;
+	font-weight: bold;
+}
+
+.half-box {
+	position: relative;
+	float: left;
+	width: 50%;
+	padding: 20px;
+}
+
+.reveal h1 {
+	font-size: 70px;
+	line-height: 1.2em;
+	text-shadow: none;
+}
+
+.reveal h4 {
+	color: #555;
+}
+
+.reveal .margin-top {
+	margin-top: 2em;
+}
+
+.reveal .no-margin {
+	margin-bottom: .2em ;
+}
+
+.reveal .small-margin {
+	margin-bottom: 1em;
+}
+
+.reveal .smaller-margin {
+	margin-bottom: .5em;
+}
+
+.reveal .margin {
+	margin-bottom: 2em;
+}
+
+.reveal h2 {
+	margin-bottom: 1.5em;
+}
+
+.reveal li {
+	line-height: 1.6em;
+	margin-bottom: 16px;
+}
+
+.reveal .positive {
+	border-top: 3px solid green;
+}
+
+.reveal .negative {
+	border-top: 3px solid red;
+}
+
+.logo-unitn {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.logo-unitn img {
+	width: 200px;
+}
+
+.reveal .slide-img {
+	box-shadow: none;
+	border: none;
+	width: 100%;
+}
+
+.reveal .slide-img-small {
+	border: none;
+	box-shadow: none;
+	width: 25%;
+}
+
+.reveal .gesture {
+	font-family: sans-serif;
+	color: #440000;
+	font-weight: bold;
+}
+
+#leap-demo {
+	height: 100%;
+}
+
+.reveal figure {
+	float: left;
+	font-size: 30px;
+}
+
+.reveal figure img {
+	border: none;
+	box-shadow: none;
+}
+
+.reveal .quantitative-results {
+	font-size: 34px;
+}
+
+.reveal .quantitative-results tr {
+}
+
+.reveal .quantitative-results tr td {
+	padding: 10px;
+}
+
+.reveal .border td {
+	border-bottom: 1px solid black;
+}
+
+.reveal table {
+	border-collapse: collapse;
+}
+
+.reveal table .header td {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.reveal .right-border {
+	border-right: 1px solid black;
+}
+
+.reveal .no-border {
+	border-bottom: none;
+}
+
+.reveal .data {
+	font-family: sans-serif;
+	text-align: center;
+	font-weight: 200;
+	font-size: 25px;
+}
+
+.reveal .smaller-text {
+	margin-top: 140px;
+	font-size: .9em;
+}
